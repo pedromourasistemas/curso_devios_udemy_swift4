@@ -30,7 +30,7 @@
                                 <state key="normal" image="planet_04"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czH-IQ-SfA">
-                                <rect key="frame" x="14" y="466" width="250" height="250"/>
+                                <rect key="frame" x="43" y="436" width="224" height="225"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="planet_17"/>
                                 <connections>
@@ -47,10 +47,10 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="138.58695652173915"/>
         </scene>
-        <!--View Controller-->
+        <!--Explosao View Controller-->
         <scene sceneID="ese-Pm-lTc">
             <objects>
-                <viewController id="7im-nZ-BX7" sceneMemberID="viewController">
+                <viewController id="7im-nZ-BX7" customClass="ExplosaoViewController" customModule="CursoDevIOSUdemy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4L3-Lu-eFt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -60,7 +60,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="planet_17" translatesAutoresizingMaskIntoConstraints="NO" id="juG-y1-NmW">
-                                <rect key="frame" x="87" y="304" width="250" height="250"/>
+                                <rect key="frame" x="82" y="243" width="250" height="250"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quer explodir esse planeja?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rye-cx-Y9j">
@@ -71,15 +71,22 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Fl-w5-4ka">
-                                <rect key="frame" x="309" y="527" width="85" height="48"/>
+                                <rect key="frame" x="273" y="526" width="85" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="SIM">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="explodir:" destination="7im-nZ-BX7" eventType="touchUpInside" id="0Xo-2c-Dh1"/>
+                                </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fRD-Z4-tBL">
+                                <rect key="frame" x="72" y="239" width="271" height="259"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="epz-N5-SUh">
-                                <rect key="frame" x="13" y="527" width="115" height="48"/>
+                                <rect key="frame" x="30" y="526" width="115" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="NÃO">
@@ -94,6 +101,10 @@
                         <viewLayoutGuide key="safeArea" id="KmO-Ea-1UW"/>
                     </view>
                     <navigationItem key="navigationItem" id="IaR-mE-5kd"/>
+                    <connections>
+                        <outlet property="explosao" destination="fRD-Z4-tBL" id="xBw-xu-fhg"/>
+                        <outlet property="planeta" destination="juG-y1-NmW" id="HYN-bs-zc9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zj0-hI-fNY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
