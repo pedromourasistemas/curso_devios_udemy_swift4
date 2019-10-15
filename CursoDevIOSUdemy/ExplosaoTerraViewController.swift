@@ -1,25 +1,26 @@
 //
-//  ExplosaoViewController.swift
+//  ExplosaoTerraViewController.swift
 //  CursoDevIOSUdemy
 //
-//  Created by Pedro Henrique de Moura on 14/10/19.
+//  Created by Pedro Henrique de Moura on 15/10/19.
 //  Copyright © 2019 Pedro Moura. All rights reserved.
 //
 
 import UIKit
 
-class ExplosaoViewController: UIViewController {
+class ExplosaoTerraViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
-    @IBOutlet weak var explosao: UIImageView!
+
     @IBOutlet weak var planeta: UIImageView!
+    @IBOutlet weak var explosao: UIImageView!
     
     @IBAction func explodir(_ sender: Any) {
+        
         UIView.animate(withDuration: 0.5){
             self.planeta.alpha = 0
         }
@@ -39,6 +40,7 @@ class ExplosaoViewController: UIViewController {
         
         explosao.animationRepeatCount = 1
         explosao.startAnimating()
+        
     }
     
 }

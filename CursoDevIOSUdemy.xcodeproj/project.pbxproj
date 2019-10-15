@@ -14,6 +14,7 @@
 		9009184A2350AE3A00D32725 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 900918492350AE3A00D32725 /* Assets.xcassets */; };
 		9009184D2350AE3A00D32725 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9009184B2350AE3A00D32725 /* LaunchScreen.storyboard */; };
 		90249895235497E100021673 /* ExplosaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90249894235497E100021673 /* ExplosaoViewController.swift */; };
+		90F21ED52355ED41004B3938 /* ExplosaoTerraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F21ED42355ED41004B3938 /* ExplosaoTerraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		9009184C2350AE3A00D32725 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9009184E2350AE3A00D32725 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90249894235497E100021673 /* ExplosaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplosaoViewController.swift; sourceTree = "<group>"; };
+		90F21ED42355ED41004B3938 /* ExplosaoTerraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplosaoTerraViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				9009184B2350AE3A00D32725 /* LaunchScreen.storyboard */,
 				9009184E2350AE3A00D32725 /* Info.plist */,
 				90249894235497E100021673 /* ExplosaoViewController.swift */,
+				90F21ED42355ED41004B3938 /* ExplosaoTerraViewController.swift */,
 			);
 			path = CursoDevIOSUdemy;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90F21ED52355ED41004B3938 /* ExplosaoTerraViewController.swift in Sources */,
 				900918452350AE3800D32725 /* ViewController.swift in Sources */,
 				90249895235497E100021673 /* ExplosaoViewController.swift in Sources */,
 				900918412350AE3800D32725 /* AppDelegate.swift in Sources */,
